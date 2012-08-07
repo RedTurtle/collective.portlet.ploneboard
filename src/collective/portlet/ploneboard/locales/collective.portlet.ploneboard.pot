@@ -1,0 +1,84 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2012-08-03 15:30+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.portlet.ploneboard\n"
+
+#: ./recent_contextual.py:28
+msgid "Forum path"
+msgstr ""
+
+#: ./recent_contextual.py:26
+msgid "Recent messages"
+msgstr ""
+
+#. Default: "Portlet title"
+#: ./active_users.py:22
+msgid "header"
+msgstr ""
+
+#. Default: "This portlet shows conversations with recent comments."
+#: ./active_users.py:127
+#: ./recent_contextual.py:122
+msgid "help_add_portlet"
+msgstr ""
+
+#. Default: "How many items to list."
+#: ./recent_contextual.py:37
+msgid "help_count"
+msgstr ""
+
+#. Default: "Choose the forum where you want to search last conversations."
+#: ./recent_contextual.py:29
+msgid "help_forumpath"
+msgstr ""
+
+#. Default: "How many users to list."
+#: ./active_users.py:29
+msgid "help_num_users"
+msgstr ""
+
+#. Default: "Insert a number of days to count the messages posted by an user in the last x days"
+#: ./active_users.py:36
+msgid "help_start_date"
+msgstr ""
+
+#. Default: "Add recent conversations portlet."
+#: ./active_users.py:125
+#: ./recent_contextual.py:120
+msgid "label_add_portlet"
+msgstr ""
+
+#. Default: "Number of users to display"
+#: ./active_users.py:27
+msgid "num_users"
+msgstr ""
+
+#. Default: "Number of day to count the comments"
+#: ./active_users.py:34
+msgid "start_date"
+msgstr ""
+
+#. Default: "Number of items to display"
+#: ./recent_contextual.py:35
+msgid "title_count"
+msgstr ""
+
+#. Default: "Portlet title"
+#: ./recent_contextual.py:23
+msgid "title_title"
+msgstr ""
+

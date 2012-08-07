@@ -1,0 +1,29 @@
+<tal:block condition="view/available"
+           i18n:domain="ploneboard">
+<dl class="portlet portletPloneboardActiveUsers">
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <span tal:content="view/title">Recent conversations</span>
+        <span class="portletTopRight"></span>
+    </dt>
+    <tal:items tal:repeat="item view/getUsers"
+				tal:condition="view/getUsers">
+        <dd class="portletItem"
+            tal:define="oddrow repeat/item/odd;
+			            username python:item[0];
+			            numcomments python:item[1];"
+            tal:attributes="class python:oddrow and  'portletItem odd' or 'portletItem even'">
+            <div>
+            	<span tal:content="string:${repeat/item/number}. ">1</span>
+            	<a href="" tal:attributes="href string:${context/portal_url}/author/$username">
+                <span tal:content="python:view.getUserName(username)+' (%d)' % numcomments"/>
+				</a>
+            </div>
+        </dd>
+    </tal:items>
+    <dd class="portletFooter">
+        <span class="portletBottomLeft"></span>
+        <span class="portletBottomRight"></span>
+    </dd>
+</dl>
+</tal:block>

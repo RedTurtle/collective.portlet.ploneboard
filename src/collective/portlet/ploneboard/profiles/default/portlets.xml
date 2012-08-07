@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<portlets
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="plone">
+      
+   <portlet
+      addview="collective.portlet.ploneboard.RecentConversationsContextual"
+      title="Recent Ploneboard contextual conversations"
+      description="A portlet which shows an overview of all recently updated conversations in one selected forum"
+      />
+     
+   <portlet
+      addview="collective.portlet.ploneboard.ActiveUsers"
+      title="Most Ploneboard active users"
+      description="A portlet which shows the most active users"
+      />     
+</portlets>
