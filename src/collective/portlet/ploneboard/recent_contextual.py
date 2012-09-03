@@ -21,19 +21,19 @@ class IRecentConversationsContextualPortlet(IPortletDataProvider):
     """
 
     title = schema.TextLine(title=_(u"title_title",
-                                default=u"Portlet title"),
-                        required=True,
-                        default=_(u"Recent messages"))
+                                    default=u"Portlet title"),
+                            required=True,
+                            default=_(u"Recent messages"))
     
     forumPath = schema.Choice(title=_(u"Forum path"),
-                             description=_(u"help_forumpath",
-                             default=u"Choose the forum where you want to search last conversations."),
-                             required=True,
-                             source=SearchableTextSourceBinder({'object_provides' : IATFolder.__identifier__},
+                              description=_(u"help_forumpath",
+                                            default=u"Choose the forum where you want to search last conversations."),
+                              required=True,
+                              source=SearchableTextSourceBinder({'object_provides' : IATFolder.__identifier__},
                                                                  default_query='path:'))
     
     count = schema.Int(title=_(u"title_count",
-                                default=u"Number of items to display"),
+                               default=u"Number of items to display"),
                        description=_(u"help_count",
                                 default=u"How many items to list."),
                        required=True,
@@ -134,4 +134,5 @@ class EditForm(base.EditForm):
                 default=u"Add recent conversations portlet.")
     description = _(u"help_add_portlet",
             default=u"This portlet shows conversations with recent comments.")
+
 
