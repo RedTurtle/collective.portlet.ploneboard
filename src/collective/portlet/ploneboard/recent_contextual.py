@@ -66,7 +66,7 @@ class Renderer(base.Renderer):
                                     name="plone_portal_state").portal_url()+"/"
                                     
         root_path='/'.join(self.context.portal_url.getPortalObject().getPhysicalPath())
-        search_path = root_path+self.data.forumPath
+        search_path = root_path+"%s", self.data.forumPath
         brains=ct(
                 path=search_path,
                 object_provides="Products.Ploneboard.interfaces.IConversation",
